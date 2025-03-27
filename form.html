@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Course Registration form</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Details:</legend>
+        <table>
+          <tr>
+            <td><label for="first-name">First Name</label></td>
+            <td><input
+              id="first-name"
+              type="text"
+              name="FN"
+              placeholder="Ex: Rohit"
+              size="15"
+            /></td>
+          </tr>
+          <tr>
+            <td><label for="last-name">Surname</label></td>
+            <td><input
+              id="last-name"
+              type="text"
+              name="LN"
+              placeholder="Ex: Singh"
+              size="15"
+            /></td>
+          </tr>
+
+          <tr>
+            <td><label for="number">Mobile Number</label></td>
+            <td><input
+              id="number"
+              type="tel"
+              name="mob"
+              placeholder="123-456-7689"
+              size="15"
+            /></td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td> <input
+              id="email"
+              type="email"
+              name="mail"
+              placeholder="example@yahoo.com"
+              size="15"
+            /></td>
+          </tr>
+
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td><input
+              type="password"
+              name="pwd"
+              placeholder="min-5 character"
+              size="15"
+            /></td>
+          </tr>
+
+          <tr>
+            <td><label for="password"> Confirm Password</label></td>
+            <td> <input
+              type="password"
+              name="cwpwd"
+              placeholder="min-5 character"
+              size="15"
+            /></td>
+          </tr>
+
+          <tr>
+            <td><label for="dob">DOM</label></td>
+            <td><input type="date" name="dob" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td><input type="radio" name="gender" value="male" />Male
+              <input type="radio" name="gender" value="Female" />Female
+              <input type="radio" name="gender" value="custom" />Custom</td>
+          </tr>
+
+          <tr>
+            <td><label for="state">Select Country</label></td>
+            <td> <select name="Country" id="state">
+              <option value="india">INDIA</option>
+              <option value="usa">USA</option>
+              <option value="china">CHINA</option>
+            </select></td>
+          </tr>
+
+          <tr>
+            <td><label for="file-upload">Upload Picture</label></td>
+            <td><input id="file-upload" type="file" /></td>
+          </tr>
+          
+
+        </table>
+        <input type="reset" />
+       
+        <!-- name attribute tell the server/backend that what is the name of data that is coming 
+      Size attribute sets the width of the input according to how much character it should display-->
+        
+
+       
+      </fieldset>
+      <fieldset>
+        <legend>Course Details:</legend>
+        <label for="courses">Select Course</label>
+        <select name="course" id="courses">
+          <option value="python">Python</option>
+          <option value="mern">Mern</option>
+          <option value="java">JAVA</option>
+          <option value="ai/ml">AI/ML</option>
+        </select>
+        <br>
+
+        <label for="">Delivery Mode</label>
+        <input type="checkbox" name="mode1" value="OFF">OFFLINE
+        <input type="checkbox" name="mode2" value="ON">ONLINE
+        <br>
+
+        <label for="comment">Comments</label><br>
+        <textarea name="" id="comment" cols="30" rows="6"></textarea>
+      </fieldset>
+
+      <!-- <img  src="./25497-9-submit-button-photos-thumb.png" height="90" width="90" type = ""> -->
+
+      <!-- <input type="submit"> -->
+
+      <button type="submit" 
+      style="background: url('./25497-9-submit-button-photos-thumb.png') no-repeat center; 
+      background-size: cover; 
+      width: 100px; height: 50px; 
+      border: none;"
+      >
+      </button>
+    </form>
+  </body>
+</html>
